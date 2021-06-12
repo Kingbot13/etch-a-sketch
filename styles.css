@@ -5,12 +5,14 @@
 
 .container {
     display: grid;
-    height: 90vh;
-    width: auto;
+    height: 900px;
+    width: 900px;
+    margin: 100px 0 0 100px;
+    grid-template-columns: repeat(16 1px);
 }
 
 .grid-items {
-    display: inline-block;
+  
 }
 
 .container div{
