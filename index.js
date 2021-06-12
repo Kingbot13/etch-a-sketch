@@ -8,12 +8,15 @@
 
 
 const container = document.querySelector(".container");  // container div
-// let gridItems;
+let gridItems;
 
 for (let i = 0; i < 32; i++){
-    let gridItems = document.createElement("div");
-    
+    gridItems = document.createElement("div");
+    gridItems.classList.add("grid-item");
     container.appendChild(gridItems);
 
 };
 
+forEach(gridItems => function(e){
+    addEventListener()
+})

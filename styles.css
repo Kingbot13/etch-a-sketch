@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    height: 90vh;
+    width: auto;
+}
+
+.grid-items {
+    display: inline-block;
+}
+
+.container div{
+    height: auto;
+    width: auto;
+}
+
+.container div:hover {
+    background-color: aqua;
+}
