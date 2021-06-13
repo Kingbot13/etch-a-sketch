@@ -8,18 +8,19 @@
     height: 900px;
     width: 900px;
     margin: 100px 0 0 100px;
-    grid-template-columns: repeat(16 1px);
+    grid-template-columns: auto auto auto;
 }
 
-.grid-items {
-  
+.grid-item {
+  width: 20px;
+  height: auto;
 }
 
-.container div{
-    height: auto;
-    width: auto;
-}
-
-.container div:hover {
+/* .container div:hover {
     background-color: aqua;
+} */
+
+.active {
+    background-color: aqua;
+
 }

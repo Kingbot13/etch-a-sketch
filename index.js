@@ -17,6 +17,10 @@ for (let i = 0; i < 32; i++){
 
 };
 
-forEach(gridItems => function(e){
-    addEventListener()
-})
+const gridList = document.querySelectorAll(".grid-item");
+
+gridList.forEach(gridItems => {
+    gridItems.addEventListener("mouseenter", () => {
+        gridItems.classList.add("active");
+    });
+});
