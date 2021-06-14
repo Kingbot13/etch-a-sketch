@@ -10,7 +10,7 @@
 const container = document.querySelector(".container");  // container div
 let gridItems;
 
-for (let i = 0; i < 32; i++){
+for (let i = 0; i < 256; i++){
     gridItems = document.createElement("div");
     gridItems.classList.add("grid-item");
     container.appendChild(gridItems);
