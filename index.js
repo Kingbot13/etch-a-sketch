@@ -7,13 +7,15 @@
 
 const button = document.querySelector("button");
 
-function createGrid (){
+function createGrid (gridColumns){
 
-    
+    gridSize = gridColumns * gridColumns;
+
     const container = document.querySelector(".container");  // container div
+    container.style.cssText += `grid-template-columns: repeat(${gridColumns}, 1fr); grid-template-rows: repeat(${gridColumns});`
     let gridItems;
     
-    for (let i = 0; i < 256; i++){
+    for (let i = 0; i < gridSize; i++){
         gridItems = document.createElement("div");
         gridItems.classList.add("grid-item");
         container.appendChild(gridItems);
@@ -31,8 +33,9 @@ function createGrid (){
 
 button.addEventListener("click", () => {
     a = prompt("What size grid?");
-    gridSize = parseInt(a);
-    createGrid()
+    gridColumns = parseInt(a);
+
+    gridColumns <= 100 ? createGrid(gridColumns) : alert("ERROR! Please enter number less than or equal to 100");
     
 });
 
